@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/07dea37be5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -16,14 +19,14 @@
                 <h1><a href="/"><span class="fa-solid fa-code" aria-hidden="true"></span> Burak Mert</a></h1>
             </li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="./about.html">About</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="https://www.linkedin.com/in/bmecode/" target="_blank"> <span class="fa-brands fa-linkedin"
                         aria-hidden="true"></span>
                     <span class="sr-only">LinkedIn</span></a></li>
             <li><a href="https://github.com/Bmecode" target="_blank"><span class="fa-brands fa-square-github"
                         aria-hidden="true"></span> <span class="sr-only">Github</span></a></li>
-            <li><a href="#resume" class="button">Resume</a></li>
+            <li><a href="https://www.linkedin.com/in/bmecode/" class="button" target="_blank">Resume</a></li>
         </ul>
     </nav>
     <section id="intro">
@@ -40,7 +43,6 @@
     </section>
 
     <div class="gradient"></div>
-    <!-- instructions in JavaScript block -->
     <div class="section-dkblue">
         <section id="projects">
             <h2>Projects I'm proud of</h2>
@@ -54,7 +56,7 @@
                         that
                         you developed or worked on. It can be as long as you need it to be but should at least be a few
                         sentences long. Be sure to include specific links anywhere in the description. A link looks like
-                        <a href="https://frontendmasters.github.io/grid-flexbox-v2/">this</a>, and multiple links look
+                        <a href="#">this</a>, and multiple links look
                         <a href="#">like this</a> and <a href="#">like this</a>.
                     <p>
                     <h4>Technologies used include:</h4>
@@ -65,6 +67,48 @@
                     </ul>
                 </div>
                 <img src="./img/fem-gettingstartedcss-ch5-1.webp" alt="Screenshot of the Wall of Wonder." />
+            </article>
+            <article class="reverse">
+                <div class="text">
+                    <h4>Bootcamp Project</h4>
+                    <h3>Feed-A-Star-Mole Game</h3>
+                    <p class="blackbox">
+                        Description of the project. This should be fairly concise while also describing the key
+                        components that you developed or worked on. It can be as long as you need it to be but should at
+                        least be a few sentences long. Be sure to include specific links anywhere
+                        in the description. A link looks like
+                        <a href="#">this</a>, and multiple links look <a href="#">like this</a> and
+                        <a href="#">like this</a>.
+                    </p>
+                    <h4>Technologies used include:</h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <img src="./img/fem-gettingstartedcss-ch5-5.webp" alt="Screenshot of the Frontend Masters Bootcamp." />
+            </article>
+            <article>
+                <div class="text">
+                    <h4>Photography Project</h4>
+                    <h3>Wall of Wonder Collection</h3>
+                    <p class="blackbox">
+                        Description of the project. This should be fairly concise while also describing the key
+                        components that you developed or worked on. It can be as long as you need it to be but should at
+                        least be a few sentences long. Be sure to include specific links anywhere
+                        in the description. A link looks like
+                        <a href="#">this</a>, and
+                        multiple links look <a href="#">like this</a> and
+                        <a href="#">like this</a>.
+                    </p>
+                    <h4>Technologies used include:</h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS Grid</li>
+                    </ul>
+                </div>
+                <img src="./img/fem-gettingstartedcss-ch5-4.webp" alt="Screenshot of the Wall of Wonder Collections." />
             </article>
         </section>
     </div>
@@ -95,7 +139,8 @@
 
         <p><small> Burak Mert. All rights reserved.</small></p>
     </footer>
-    <script>const currentYear = new Date().getFullYear();
+    <script>
+        const currentYear = new Date().getFullYear();
         const currentSmall = document.getElementsByTagName("small")[0].innerText;
         document.getElementsByTagName("small")[0].innerHTML = `&copy; ${currentYear} ${currentSmall}`;
     </script>
