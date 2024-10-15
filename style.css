@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@300;400;700&display=swap");
-
 :root {
   --black: #171321;
   --dkblue: #0d314b;
@@ -12,7 +11,6 @@
   --mono: "Oxygen mono", monospace;
   --sans: Oxygen, sans-serif;
 }
-/* border box model: https://css-tricks.com/box-sizing/ */
 html {
   box-sizing: border-box;
 }
@@ -43,6 +41,7 @@ a:hover {
 }
 
 /* intro styles */
+
 #intro {
   padding-bottom: 10rem;
 }
@@ -65,17 +64,22 @@ a:hover {
   font-size: 4rem;
   font-weight: normal;
 }
+
+/*    contact     */
+
 #contact {
-  width: 400px;
   text-align: center;
   margin: 0 auto;
   padding: 3rem 0;
+  background-color: var(--plum);
 }
 
 #contact p:last-child {
   margin-top: 3rem;
 }
-/*  navbar  */
+
+/*     navbar     */
+
 nav {
   font-family: var(--mono);
   font-size: 80%; /* burada verdiğimiz yüzde ile size yüzdelik olarak küçültüyoruz.*/
@@ -95,7 +99,7 @@ nav ul {
   gap: 2rem;
 }
 nav li:first-child {
-  flex-basis:100%;
+  flex-basis: 100%;
   text-align: center;
 }
 nav a {
@@ -106,6 +110,71 @@ nav a {
 nav a:hover {
   color: var(--magenta);
 }
-nav [class*="fa-"]{
+nav [class*="fa-"] {
   font-size: 150%;
+  color: var(--aqua);
+}
+
+nav h1 [class*="fa-"] {
+  font-size: 100%;
+  color: var(--aqua);
+}
+
+nav [class*="fa-"]:hover {
+  color: var(--magenta);
+}
+.button {
+  background-color: var(--magenta);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.button:hover {
+  color: var(--white);
+  background-color: var(--hotmag);
+}
+
+/*       footer       */
+
+footer {
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 3rem;
+}
+/* footer h2{
+  flex-basis:100%;
+  margin:1rem auto;
+  font-weight: normal;
+} 
+ 
+footer li [class*="fa-"] {
+  font-size: 250%;
+  color: var(--magenta);
+} 
+
+ 
+footer li [class*="fa-"]:hover {
+  color: var(--aqua);
+} */
+
+/*      media       */
+
+@media (min-width: 850px) {
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
 }
